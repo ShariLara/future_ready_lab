@@ -49,4 +49,3 @@ function playGame(){
 }
 
 
-//entered value is number
