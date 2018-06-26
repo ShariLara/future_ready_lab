@@ -5,14 +5,20 @@ function playGame(){
     //get the low and high bounds
     //uses parseInt() to make sure we have numbers not strings 
     var from = parseInt(prompt("Enter the lower bound."));
-    while( isNaN(from || from < 0 || from > 1000)){
+    while(isNaN(from < 0 || from > 1000)){
             from = parseInt(prompt("Enter a number between 0 and 1000"))
+    }
+     while (isNaN(from)){
+            from = parseInt(prompt ("Enter a numberical value"))
     }
 
     var to = parseInt(prompt ("Enter the higher bound."));
-    while( isNaN(from || from < 0 || from > 1000)){
-            from = parseInt(prompt("Enter a number between 0 and 1000"))
+    while(isNaN(to < 0 || to > 1000)){
+            to = parseInt(prompt("Enter a number between 0 and 1000"))
                  }
+    while (isNaN(to)){
+            to = parseInt(prompt ("Enter a numberical value"))
+        }
 
 
     //get an integer between [from, to]
