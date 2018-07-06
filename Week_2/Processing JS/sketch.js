@@ -27,15 +27,15 @@ function setup() {
     createCanvas(parseInt(prompt("Input a number for the width of the canvas.")), parseInt(prompt("Input a number for the height of the canvas.")));
     var background = [];
     var numCircle = random([2,5,10,16]);
-    for(var i = 0; i < numCircle; i++);{
+    for(var i = 0; i < numCircle; i++) {
         ballList.push(new Ball(random(0, width), random(0, height), random(0, 10), random(0, 225), random(0, 15), random(0, 15)));
     }
   frameRate(15);
-}
+} 
 
 function draw() {
     background(210, 135, 146);
-    for(var i = 0; i < ballList.length; i++);{
+    for(var i = 0; i < ballList.length; i++) {
         fill(ballList[i].color); 
         ellipse(ballList[i].xCoor, ballList[i].yCoor, ballList[i].diameter);
 
